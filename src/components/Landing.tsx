@@ -3,9 +3,6 @@ import "./styles/Landing.css";
 import { config } from "../config";
 
 const Landing = ({ children }: PropsWithChildren) => {
-  const nameParts = config.developer.fullName.split(" ");
-  const firstName = nameParts[0] || config.developer.name;
-  const lastName = nameParts.slice(1).join(" ") || "";
 
   return (
     <>
