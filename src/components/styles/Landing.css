@@ -187,27 +187,15 @@
 .landing-intro h1 {
   margin: 0;
   letter-spacing: 2px;
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
   font-family: "Geist", sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
-.name-part {
-  display: block;
-  white-space: nowrap;
-}
-
-/* Ensure no overlap with character or info */
-@media screen and (min-width: 1025px) {
-  .landing-intro h1 {
-    font-size: 45px;
-    gap: 10px;
-  }
-}
+/* .landing-intro h1 span {
+   font-weight: 200; 
+} */
 
 .landing-info {
   position: absolute;
@@ -317,8 +305,8 @@
   }
 
   .landing-intro h1 {
-    font-size: 50px;
-    line-height: 1;
+    font-size: 40px;
+    line-height: 35px;
   }
 
   .landing-info h3 {
@@ -390,8 +378,8 @@
   }
 
   .landing-intro h1 {
-    font-size: 70px;
-    line-height: 0.9;
+    font-size: 60px;
+    line-height: 55px;
   }
 
   .landing-info h3 {

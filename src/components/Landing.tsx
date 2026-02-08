@@ -3,6 +3,9 @@ import "./styles/Landing.css";
 import { config } from "../config";
 
 const Landing = ({ children }: PropsWithChildren) => {
+  const nameParts = config.developer.fullName.split(" ");
+  const firstName = nameParts[0] || config.developer.name;
+  const lastName = nameParts.slice(1).join(" ") || "";
 
   return (
     <>
@@ -11,11 +14,9 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
             <h1>
-              {config.developer.fullName.split(" ").map((part, index) => (
-                <div key={index} className="name-part">
-                  {part.toUpperCase()}
-                </div>
-              ))}
+              {firstName.toUpperCase()}
+              <br />
+              {lastName && <span>{lastName.toUpperCase()}</span>}
             </h1>
           </div>
           <div className="landing-info">
