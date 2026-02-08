@@ -1,105 +1,160 @@
 export const config = {
     developer: {
-        name: "Huzaif",
-        fullName: "Huzaif Ahmed",
-        title: "Full Stack Developer",
-        description: "Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star."
+        name: "Rohan Gudibande",
+        fullName: "Rohan Ravindra Gudibande",
+        title: "Assistant Professor of Economics",
+        description: "Assistant Professor at the School of Interwoven Arts and Sciences, Krea University. Specializing in Empirical Political Economy, Applied Micro-Economics, and Development Economics.",
     },
     social: {
-        github: "huzaifahmedz",
-        email: "dev.huzaif@gmail.com",
-        location: "India"
+        github: "",
+        email: "rohan.gudibande@krea.edu.in",
+        location: "Sricity, India",
+        linkedin: "https://www.linkedin.com/in/rohan-gudibande-590a231a/",
+        twitter: "",
     },
     about: {
-        title: "About Me",
-        description: "Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star. I specialize in building modern web applications with React, Node.js, and cutting-edge technologies."
+        title: "Academic Profile",
+        description: "My current research aims to understand the outcomes (both pecuniary and non-pecuniary) and mechanisms of development in relation to events or processes driving different conflicts, crime and related frictions that organize individual incentives, identity and behavior. I am also interested in the workings of informal labor markets.",
     },
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
-            location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
+            position: "Assistant Professor of Economics",
+            company: "Krea University",
+            period: "Jul. 2021 – Present",
+            location: "Sricity, India",
+            description: "Founding Faculty in Economics and Discipline Coordinator, SIAS. Teaching Principles of Economics, Data Analytics, Microeconomic Theory, and Econometrics.",
             responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
+                "Founding Faculty in Economics and Discipline Coordinator, SIAS",
+                "Lead Organizer of the Econ Research Seminar Series (ECONVERSATIONS)",
+                "Member of the Faculty Hiring Committee and Undergraduate Curriculum Revision Committee"
             ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            technologies: ["Teaching", "Research", "Mentorship", "Curriculum Design"],
         },
         {
-            position: "Full Stack Developer",
-            company: "Tekisky",
-            period: "2023 - 2024",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+            position: "Consultant",
+            company: "IFMR-LEAD, Krea University",
+            period: "Sep. 2023 – April 2025",
+            location: "Sricity, India",
+            description: "Data Innovations vertical. Collaborating to execute big data projects and advise in establishing Data Analytics research vertical.",
             responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
+                "Execute big data projects as PI",
+                "Advise in establishing Data Analytics research vertical"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
-        }
+            technologies: ["Data Analytics", "Big Data", "Consulting"],
+        },
+        {
+            position: "Research Scholar",
+            company: "Chapman University",
+            period: "Sep. 2019 – Aug. 2021",
+            location: "Orange, USA",
+            description: "Institute for the Study of Religion, Economics and Society (IRES).",
+            responsibilities: ["Research on religion, economics, and society"],
+            technologies: ["Research", "Political Economy"],
+        },
+        {
+            position: "Post-Doctoral Fellow",
+            company: "Princeton University",
+            period: "Sep. 2017 – Jun. 2020",
+            location: "Princeton, USA",
+            description: "Empirical Studies of Conflict Project, Princeton School of Public and International Affairs.",
+            responsibilities: ["Research on conflict and development"],
+            technologies: ["Conflict Studies", "Empirical Research"],
+        },
+        {
+            position: "Economist",
+            company: "German Development Institute (D.I.E)",
+            period: "Oct. 2016 – Aug. 2017",
+            location: "Bonn, Germany",
+            description: "World Economy and Development Finance Unit.",
+            responsibilities: ["Economic analysis and policy research"],
+            technologies: ["Development Finance", "Policy Analysis"],
+        },
+        // Education moved to experiences for chronological flow
+        {
+            position: "PhD in Development Economics",
+            company: "The Graduate Institute, Geneva",
+            period: "Sep. 2011 – Sep. 2016",
+            location: "Geneva, Switzerland",
+            description: "Magna Cum Laude. Thesis: Three Essays in the Political Economy of Micro-Development.",
+            responsibilities: ["Thesis Examiners: Jean-Louis Arcand, Ravi Bhavnani, Jean-Pierre Tranchant, Lore Vandewalle"],
+            technologies: ["Development Economics", "Political Economy"],
+        },
     ],
     projects: [
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            category: "Full Stack",
-            technologies: "Python, TensorFlow, React, FastAPI, PostgreSQL, Docker",
-            image: "/images/project-1.webp"
+            title: "Minimum Wage Law for Domestic Workers",
+            category: "Publication",
+            technologies: "World Development, Vol 130, 2020",
+            image: "/images/research-1.png",
+            description: "Impact Evaluation of the Indian Experience. With Arun Jacob.",
+            link: "https://www.sciencedirect.com/science/article/pii/S0305750X20300693"
         },
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            category: "Full Stack",
-            technologies: "TypeScript, WebRTC, Socket.io, Canvas API, Node.js, Redis",
-            image: "/images/project-2.webp"
+            title: "Land Redistribution and Coercive Violence",
+            category: "Working Paper",
+            technologies: "Under Review",
+            image: "/images/research-2.jpg",
+            description: "With Abhinaba Nandy and Vatsalya Srivastava. GLO working paper.",
+            link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4964462"
         },
         {
             id: 3,
-            title: "Blockchain Voting System",
-            category: "Full Stack",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask",
-            image: "/images/project-3.webp"
+            title: "Conflicts and Consumption",
+            category: "Working Paper",
+            technologies: "Under Revision",
+            image: "/images/research-3.jpg",
+            description: "Evidence from India. With Anindya S. Chakrabarti and Abhishek Shaw.",
+            link: "#"
         },
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            category: "Full Stack",
-            technologies: "Go, Kubernetes, Grafana, Prometheus, Terraform, React",
-            image: "/images/project-4.webp"
+            title: "Land Conflict and Road Infrastructure",
+            category: "Working Paper",
+            technologies: "Under Revision",
+            image: "/images/research-4.jpg",
+            description: "Evidence from India. With Dibyajyoti Basak.",
+            link: "#"
         },
         {
             id: 5,
-            title: "Neural Network Visualizer",
-            category: "Full Stack",
-            technologies: "Python, TensorFlow.js, D3.js, Next.js, WebGL, TypeScript",
-            image: "/images/project-5.webp"
+            title: "Complementarities in Developmental Infrastructure",
+            category: "Working Paper",
+            technologies: "Under Revision",
+            image: "/images/research-5.png",
+            description: "Rural Roads and Access to Electrification. With Namrata Chindarkar, Deepti Sharma and Milind Gupta.",
+            link: "#"
+        },
+        {
+            id: 6,
+            title: "Reality, Rhetoric and Reporting of Immigration and Crime",
+            category: "Working Paper",
+            technologies: "Under Revision",
+            image: "/images/research-6.png",
+            description: "With Karsten Donnay and Ravi Bhavnani.",
+            link: "#"
         }
     ],
     contact: {
-        email: "dev.huzaif@gmail.com",
-        github: "https://github.com/huzaifahmedz",
-        linkedin: "https://www.linkedin.com",
-        twitter: "https://x.com",
-        instagram: "https://www.instagram.com"
+        email: "rohan.gudibande@krea.edu.in",
+        github: "",
+        linkedin: "https://www.linkedin.com/in/rohan-gudibande-590a231a/",
+        twitter: "",
+        instagram: ""
     },
     skills: {
         develop: {
-            title: "DEVELOP",
-            description: "Full-stack development with modern web technologies",
-            details: "Building scalable web applications using React, Node.js, and cutting-edge frameworks. Specializing in creating responsive, performant, and accessible user interfaces.",
-            tools: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express.js", "MongoDB", "TailwindCSS", "Framer Motion", "Three.js"]
+            title: "RESEARCH FIELDS",
+            description: "Core areas of academic inquiry and expertise",
+            details: "My research focuses on the intersection of political economy and development, with a particular interest in conflict, labor markets, and infrastructure.",
+            tools: ["Empirical Political Economy", "Applied Micro-Economics", "Applied Econometrics", "Development Economics", "Labor Markets", "Conflict Studies"]
         },
         design: {
-            title: "DESIGN",
-            description: "UI/UX design and modern web interfaces",
-            details: "Creating beautiful and intuitive user experiences with focus on accessibility and user-centered design principles.",
-            tools: ["UI Design", "UX Design", "Figma", "Photoshop", "Motion Design", "Responsive Design", "Accessibility", "Prototyping"]
+            title: "TOOLS & METHODS",
+            description: "Methodological expertise and software proficiency",
+            details: "Experienced in rigorous quantitative analysis using advanced statistical software and geospatial tools.",
+            tools: ["STATA", "R", "ArcGIS", "LaTeX", "Econometrics", "Micro-Economics", "Policy Analysis"]
         }
     }
 };

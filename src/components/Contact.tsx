@@ -76,15 +76,6 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href={config.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Github <MdArrowOutward />
-            </a>
-            <a
               href={config.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
@@ -93,31 +84,10 @@ const Contact = () => {
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href={config.contact.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
           </div>
           <div className="contact-box">
-            <h2>
-              Designed and Developed <br /> by <span>{config.developer.fullName}</span>
-            </h2>
             <h5>
-              <MdCopyright /> {new Date().getFullYear()}
+              <MdCopyright /> {new Date().getFullYear()} {config.developer.fullName}
             </h5>
           </div>
         </div>

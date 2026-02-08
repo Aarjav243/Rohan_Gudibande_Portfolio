@@ -49,7 +49,7 @@ export class TextSplitter {
   private splitChars(element: Element) {
     const text = element.textContent || "";
     const chars = text.split("");
-    
+
     element.innerHTML = chars
       .map((char) => {
         if (char === " ") {
@@ -72,7 +72,7 @@ export class TextSplitter {
     element.innerHTML = words
       .map((word) => {
         if (word.trim().length === 0) {
-          return word; // Preserve whitespace
+          return `<span class="split-word">${word}</span>`; // Wrap whitespace too
         }
         return `<span class="split-word">${word}</span>`;
       })

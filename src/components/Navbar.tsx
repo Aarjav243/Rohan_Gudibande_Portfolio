@@ -12,12 +12,11 @@ const Navbar = () => {
   useEffect(() => {
     // Initialize Lenis smooth scroll
     lenis = new Lenis({
-      duration: 1.7,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: 0.1, // Using lerp instead of duration for buttery smoothness
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      wheelMultiplier: 1.7,
+      wheelMultiplier: 1,
       touchMultiplier: 2,
       infinite: false,
     });
@@ -25,12 +24,14 @@ const Navbar = () => {
     // Start paused
     lenis.stop();
 
-    // Handle smooth scroll animation frame
-    function raf(time: number) {
-      lenis?.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    // Sync Lenis with GSAP ScrollTrigger
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis?.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
 
     // Handle navigation links
     let links = document.querySelectorAll(".header ul a");
@@ -67,14 +68,14 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          R. Gudibande
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:rohan.gudibande@krea.edu.in"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          rohan.gudibande@krea.edu.in
         </a>
         <ul>
           <li>

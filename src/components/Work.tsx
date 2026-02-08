@@ -31,15 +31,19 @@ const Work = () => {
         trigger: ".work-section",
         start: "top top",
         end: `+=${translateX}`, // Use actual scroll width
-        scrub: true,
+        scrub: 2, // Higher scrub for ultra-smooth inertia
         pin: true,
         id: "work",
+        anticipatePin: 1,
+        fastScrollEnd: true,
+        invalidateOnRefresh: true,
       },
     });
 
     timeline.to(".work-flex", {
       x: -translateX,
-      ease: "none",
+      ease: "power1.inOut",
+      force3D: true, // Hint for GPU acceleration
     });
 
     // Clean up
@@ -52,7 +56,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          Research <span>Output</span>
         </h2>
         <div className="work-flex">
           {config.projects.map((project, index) => (
@@ -66,8 +70,27 @@ const Work = () => {
                     <p>{project.category}</p>
                   </div>
                 </div>
-                <h4>Tools and features</h4>
+                <h4>Details</h4>
                 <p>{project.technologies}</p>
+                <div style={{ marginTop: "10px", opacity: 0.8, fontSize: "0.9em" }}>
+                  <p>{project.description}</p>
+                </div>
+                {project.link && project.link !== "#" && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      marginTop: "15px",
+                      color: "var(--accentColor)",
+                      textDecoration: "none",
+                      borderBottom: "1px solid var(--accentColor)"
+                    }}
+                  >
+                    Read Paper →
+                  </a>
+                )}
               </div>
               <WorkImage image={project.image} alt={project.title} />
             </div>
