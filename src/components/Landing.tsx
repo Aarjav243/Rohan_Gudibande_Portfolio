@@ -14,9 +14,11 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
             <h1>
-              {firstName.toUpperCase()}
-              <br />
-              {lastName && <span>{lastName.toUpperCase()}</span>}
+              {config.developer.fullName.split(" ").map((part, index) => (
+                <div key={index} className="name-part">
+                  {part.toUpperCase()}
+                </div>
+              ))}
             </h1>
           </div>
           <div className="landing-info">
